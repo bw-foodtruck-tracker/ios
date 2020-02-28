@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  FoodTruckTrackr
+//  FoodTruck TrackR
 //
-//  Created by Nicolas Rios on 2/26/20.
-//  Copyright © 2020 Nicolas Rios. All rights reserved.
+//  Created by patelpra on 2/27/20.
+//  Copyright © 2020 Crus Technologies. All rights reserved.
 //
 
 import UIKit

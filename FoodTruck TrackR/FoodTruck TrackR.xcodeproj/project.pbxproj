@@ -7,27 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3EFEC01C240733D600372370 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFEC01B240733D600372370 /* AppDelegate.swift */; };
-		3EFEC01E240733D600372370 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFEC01D240733D600372370 /* SceneDelegate.swift */; };
-		3EFEC020240733D600372370 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFEC01F240733D600372370 /* ViewController.swift */; };
-		3EFEC023240733D600372370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EFEC021240733D600372370 /* Main.storyboard */; };
-		3EFEC025240733D800372370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EFEC024240733D800372370 /* Assets.xcassets */; };
-		3EFEC028240733D800372370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EFEC026240733D800372370 /* LaunchScreen.storyboard */; };
+		3E0BE11B2408B6E200D4B3CC /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0BE11A2408B6E200D4B3CC /* signupViewController.swift */; };
+		ABEA90AB2408946000535B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90AA2408946000535B74 /* AppDelegate.swift */; };
+		ABEA90AD2408946000535B74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90AC2408946000535B74 /* SceneDelegate.swift */; };
+		ABEA90AF2408946000535B74 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90AE2408946000535B74 /* LoginViewController.swift */; };
+		ABEA90B22408946000535B74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABEA90B02408946000535B74 /* Main.storyboard */; };
+		ABEA90B42408946D00535B74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABEA90B32408946D00535B74 /* Assets.xcassets */; };
+		ABEA90B72408946D00535B74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABEA90B52408946D00535B74 /* LaunchScreen.storyboard */; };
+		ABEA90BF2408A69500535B74 /* Customer+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90BE2408A69500535B74 /* Customer+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3EFEC018240733D600372370 /* FoodTruckTrackr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTruckTrackr.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EFEC01B240733D600372370 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3EFEC01D240733D600372370 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3EFEC01F240733D600372370 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3EFEC022240733D600372370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3EFEC024240733D800372370 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3EFEC027240733D800372370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3EFEC029240733D800372370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E0BE11A2408B6E200D4B3CC /* signupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
+		ABEA90A72408946000535B74 /* FoodTruck TrackR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FoodTruck TrackR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABEA90AA2408946000535B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ABEA90AC2408946000535B74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ABEA90AE2408946000535B74 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ABEA90B12408946000535B74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABEA90B32408946D00535B74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABEA90B62408946D00535B74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ABEA90B82408946D00535B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABEA90BE2408A69500535B74 /* Customer+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3EFEC015240733D600372370 /* Frameworks */ = {
+		ABEA90A42408946000535B74 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +41,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3EFEC00F240733D600372370 = {
+		ABEA909E2408946000535B74 = {
 			isa = PBXGroup;
 			children = (
-				3EFEC01A240733D600372370 /* FoodTruckTrackr */,
-				3EFEC019240733D600372370 /* Products */,
+				ABEA90A92408946000535B74 /* FoodTruck TrackR */,
+				ABEA90A82408946000535B74 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3EFEC019240733D600372370 /* Products */ = {
+		ABEA90A82408946000535B74 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3EFEC018240733D600372370 /* FoodTruckTrackr.app */,
+				ABEA90A72408946000535B74 /* FoodTruck TrackR.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3EFEC01A240733D600372370 /* FoodTruckTrackr */ = {
+		ABEA90A92408946000535B74 /* FoodTruck TrackR */ = {
 			isa = PBXGroup;
 			children = (
-				3EFEC01B240733D600372370 /* AppDelegate.swift */,
-				3EFEC01D240733D600372370 /* SceneDelegate.swift */,
-				3EFEC01F240733D600372370 /* ViewController.swift */,
-				3EFEC021240733D600372370 /* Main.storyboard */,
-				3EFEC024240733D800372370 /* Assets.xcassets */,
-				3EFEC026240733D800372370 /* LaunchScreen.storyboard */,
-				3EFEC029240733D800372370 /* Info.plist */,
+				ABEA90AA2408946000535B74 /* AppDelegate.swift */,
+				ABEA90AC2408946000535B74 /* SceneDelegate.swift */,
+				ABEA90AE2408946000535B74 /* LoginViewController.swift */,
+				3E0BE11A2408B6E200D4B3CC /* signupViewController.swift */,
+				ABEA90BE2408A69500535B74 /* Customer+Convenience.swift */,
+				ABEA90B02408946000535B74 /* Main.storyboard */,
+				ABEA90B32408946D00535B74 /* Assets.xcassets */,
+				ABEA90B52408946D00535B74 /* LaunchScreen.storyboard */,
+				ABEA90B82408946D00535B74 /* Info.plist */,
 			);
-			path = FoodTruckTrackr;
+			path = "FoodTruck TrackR";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3EFEC017240733D600372370 /* FoodTruckTrackr */ = {
+		ABEA90A62408946000535B74 /* FoodTruck TrackR */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3EFEC02C240733D800372370 /* Build configuration list for PBXNativeTarget "FoodTruckTrackr" */;
+			buildConfigurationList = ABEA90BB2408946D00535B74 /* Build configuration list for PBXNativeTarget "FoodTruck TrackR" */;
 			buildPhases = (
-				3EFEC014240733D600372370 /* Sources */,
-				3EFEC015240733D600372370 /* Frameworks */,
-				3EFEC016240733D600372370 /* Resources */,
+				ABEA90A32408946000535B74 /* Sources */,
+				ABEA90A42408946000535B74 /* Frameworks */,
+				ABEA90A52408946000535B74 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FoodTruckTrackr;
-			productName = FoodTruckTrackr;
-			productReference = 3EFEC018240733D600372370 /* FoodTruckTrackr.app */;
+			name = "FoodTruck TrackR";
+			productName = "FoodTruck TrackR";
+			productReference = ABEA90A72408946000535B74 /* FoodTruck TrackR.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3EFEC010240733D600372370 /* Project object */ = {
+		ABEA909F2408946000535B74 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = "Nicolas Rios";
+				ORGANIZATIONNAME = "Crus Technologies";
 				TargetAttributes = {
-					3EFEC017240733D600372370 = {
+					ABEA90A62408946000535B74 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 3EFEC013240733D600372370 /* Build configuration list for PBXProject "FoodTruckTrackr" */;
+			buildConfigurationList = ABEA90A22408946000535B74 /* Build configuration list for PBXProject "FoodTruck TrackR" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +116,57 @@
 				en,
 				Base,
 			);
-			mainGroup = 3EFEC00F240733D600372370;
-			productRefGroup = 3EFEC019240733D600372370 /* Products */;
+			mainGroup = ABEA909E2408946000535B74;
+			productRefGroup = ABEA90A82408946000535B74 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3EFEC017240733D600372370 /* FoodTruckTrackr */,
+				ABEA90A62408946000535B74 /* FoodTruck TrackR */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3EFEC016240733D600372370 /* Resources */ = {
+		ABEA90A52408946000535B74 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EFEC028240733D800372370 /* LaunchScreen.storyboard in Resources */,
-				3EFEC025240733D800372370 /* Assets.xcassets in Resources */,
-				3EFEC023240733D600372370 /* Main.storyboard in Resources */,
+				ABEA90B72408946D00535B74 /* LaunchScreen.storyboard in Resources */,
+				ABEA90B42408946D00535B74 /* Assets.xcassets in Resources */,
+				ABEA90B22408946000535B74 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3EFEC014240733D600372370 /* Sources */ = {
+		ABEA90A32408946000535B74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EFEC020240733D600372370 /* ViewController.swift in Sources */,
-				3EFEC01C240733D600372370 /* AppDelegate.swift in Sources */,
-				3EFEC01E240733D600372370 /* SceneDelegate.swift in Sources */,
+				ABEA90AF2408946000535B74 /* LoginViewController.swift in Sources */,
+				ABEA90AB2408946000535B74 /* AppDelegate.swift in Sources */,
+				3E0BE11B2408B6E200D4B3CC /* signupViewController.swift in Sources */,
+				ABEA90AD2408946000535B74 /* SceneDelegate.swift in Sources */,
+				ABEA90BF2408A69500535B74 /* Customer+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3EFEC021240733D600372370 /* Main.storyboard */ = {
+		ABEA90B02408946000535B74 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3EFEC022240733D600372370 /* Base */,
+				ABEA90B12408946000535B74 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		3EFEC026240733D800372370 /* LaunchScreen.storyboard */ = {
+		ABEA90B52408946D00535B74 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3EFEC027240733D800372370 /* Base */,
+				ABEA90B62408946D00535B74 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +174,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3EFEC02A240733D800372370 /* Debug */ = {
+		ABEA90B92408946D00535B74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +234,7 @@
 			};
 			name = Debug;
 		};
-		3EFEC02B240733D800372370 /* Release */ = {
+		ABEA90BA2408946D00535B74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,36 +288,36 @@
 			};
 			name = Release;
 		};
-		3EFEC02D240733D800372370 /* Debug */ = {
+		ABEA90BC2408946D00535B74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y9UNY8645A;
-				INFOPLIST_FILE = FoodTruckTrackr/Info.plist;
+				DEVELOPMENT_TEAM = 46XAGWCJPW;
+				INFOPLIST_FILE = "FoodTruck TrackR/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.codewithnick.FoodTruckTrackr;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pravinpatel.FoodTruck-TrackR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		3EFEC02E240733D800372370 /* Release */ = {
+		ABEA90BD2408946D00535B74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y9UNY8645A;
-				INFOPLIST_FILE = FoodTruckTrackr/Info.plist;
+				DEVELOPMENT_TEAM = 46XAGWCJPW;
+				INFOPLIST_FILE = "FoodTruck TrackR/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.codewithnick.FoodTruckTrackr;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pravinpatel.FoodTruck-TrackR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,25 +327,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3EFEC013240733D600372370 /* Build configuration list for PBXProject "FoodTruckTrackr" */ = {
+		ABEA90A22408946000535B74 /* Build configuration list for PBXProject "FoodTruck TrackR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3EFEC02A240733D800372370 /* Debug */,
-				3EFEC02B240733D800372370 /* Release */,
+				ABEA90B92408946D00535B74 /* Debug */,
+				ABEA90BA2408946D00535B74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3EFEC02C240733D800372370 /* Build configuration list for PBXNativeTarget "FoodTruckTrackr" */ = {
+		ABEA90BB2408946D00535B74 /* Build configuration list for PBXNativeTarget "FoodTruck TrackR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3EFEC02D240733D800372370 /* Debug */,
-				3EFEC02E240733D800372370 /* Release */,
+				ABEA90BC2408946D00535B74 /* Debug */,
+				ABEA90BD2408946D00535B74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3EFEC010240733D600372370 /* Project object */;
+	rootObject = ABEA909F2408946000535B74 /* Project object */;
 }
