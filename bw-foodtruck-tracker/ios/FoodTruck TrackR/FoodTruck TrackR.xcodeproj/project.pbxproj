@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E43B28D240B11F90004A7BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E43B28C240B11F90004A7BF /* LaunchScreen.storyboard */; };
+		3E43B28F240B12350004A7BF /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E43B28E240B12350004A7BF /* signupViewController.swift */; };
 		ABEA90AB2408946000535B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90AA2408946000535B74 /* AppDelegate.swift */; };
 		ABEA90AD2408946000535B74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90AC2408946000535B74 /* SceneDelegate.swift */; };
 		ABEA90AF2408946000535B74 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90AE2408946000535B74 /* LoginViewController.swift */; };
 		ABEA90B22408946000535B74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABEA90B02408946000535B74 /* Main.storyboard */; };
 		ABEA90B42408946D00535B74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABEA90B32408946D00535B74 /* Assets.xcassets */; };
-		ABEA90B72408946D00535B74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABEA90B52408946D00535B74 /* LaunchScreen.storyboard */; };
 		ABEA90BF2408A69500535B74 /* Customer+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90BE2408A69500535B74 /* Customer+Convenience.swift */; };
 		ABEA90C12408C5F000535B74 /* Truck+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90C02408C5F000535B74 /* Truck+Convenience.swift */; };
 		ABEA90CB240AD79800535B74 /* FoodTruck TrackR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90C9240AD79800535B74 /* FoodTruck TrackR.xcdatamodeld */; };
@@ -22,13 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E43B28C240B11F90004A7BF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E43B28E240B12350004A7BF /* signupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
 		ABEA90A72408946000535B74 /* FoodTruck TrackR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FoodTruck TrackR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABEA90AA2408946000535B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABEA90AC2408946000535B74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ABEA90AE2408946000535B74 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ABEA90B12408946000535B74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABEA90B32408946D00535B74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ABEA90B62408946D00535B74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABEA90B82408946D00535B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABEA90BE2408A69500535B74 /* Customer+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer+Convenience.swift"; sourceTree = "<group>"; };
 		ABEA90C02408C5F000535B74 /* Truck+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Truck+Convenience.swift"; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		ABEA90C2240AD6E000535B74 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3E43B28E240B12350004A7BF /* signupViewController.swift */,
 				ABEA90AE2408946000535B74 /* LoginViewController.swift */,
 			);
 			path = "View Controllers";
@@ -136,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				ABEA90B02408946000535B74 /* Main.storyboard */,
-				ABEA90B52408946D00535B74 /* LaunchScreen.storyboard */,
+				3E43B28C240B11F90004A7BF /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -199,7 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABEA90B72408946D00535B74 /* LaunchScreen.storyboard in Resources */,
+				3E43B28D240B11F90004A7BF /* LaunchScreen.storyboard in Resources */,
 				ABEA90B42408946D00535B74 /* Assets.xcassets in Resources */,
 				ABEA90B22408946000535B74 /* Main.storyboard in Resources */,
 			);
@@ -214,6 +217,7 @@
 			files = (
 				ABEA90C12408C5F000535B74 /* Truck+Convenience.swift in Sources */,
 				ABEA90AF2408946000535B74 /* LoginViewController.swift in Sources */,
+				3E43B28F240B12350004A7BF /* signupViewController.swift in Sources */,
 				ABEA90AB2408946000535B74 /* AppDelegate.swift in Sources */,
 				ABEA90AD2408946000535B74 /* SceneDelegate.swift in Sources */,
 				ABEA90CF240AEE6400535B74 /* CustomerRating+Convenience.swift in Sources */,
@@ -233,14 +237,6 @@
 				ABEA90B12408946000535B74 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		ABEA90B52408946D00535B74 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ABEA90B62408946D00535B74 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
