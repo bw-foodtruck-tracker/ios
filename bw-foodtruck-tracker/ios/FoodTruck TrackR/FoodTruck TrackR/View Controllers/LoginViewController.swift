@@ -27,6 +27,7 @@ class LoginViewController: UIViewController {
         setupViews()
     }
     
+    
     private func setupViews() {
         LoginViewController.isVendor = false
         // userType = .customer
