@@ -13,7 +13,6 @@ extension Truck {
     @discardableResult convenience init(identifier: UUID = UUID(),
                                         customerRating: Double,
                                         truckName: String,
-                                        location: Location,
                                         imageOfTruck: String,
                                         cuisineType: String,
                                         context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
@@ -23,7 +22,6 @@ extension Truck {
         self.truckName = truckName
         self.cuisineType = cuisineType
         self.customerRating = customerRating
-        self.Location = Location
         self.imageOfTruck = imageOfTruck
     }
 }
