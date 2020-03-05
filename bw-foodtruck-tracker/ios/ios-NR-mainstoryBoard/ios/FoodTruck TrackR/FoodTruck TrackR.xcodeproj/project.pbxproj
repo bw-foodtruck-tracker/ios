@@ -17,6 +17,8 @@
 		3E26A1DC240E26F600524321 /* CustomerRatingsRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1D8240E26F600524321 /* CustomerRatingsRepresentation.swift */; };
 		3E26A1DD240E26F600524321 /* CustomerRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1D9240E26F600524321 /* CustomerRepresentation.swift */; };
 		3E43B28D240B11F90004A7BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E43B28C240B11F90004A7BF /* LaunchScreen.storyboard */; };
+		3E62542C2410A0A2001E13F2 /* AddTruckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E62542B2410A0A2001E13F2 /* AddTruckViewController.swift */; };
+		3E62542E2410A12A001E13F2 /* trucksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E62542D2410A12A001E13F2 /* trucksTableViewController.swift */; };
 		ABEA90AB2408946000535B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90AA2408946000535B74 /* AppDelegate.swift */; };
 		ABEA90AD2408946000535B74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90AC2408946000535B74 /* SceneDelegate.swift */; };
 		ABEA90AF2408946000535B74 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90AE2408946000535B74 /* LoginViewController.swift */; };
@@ -41,6 +43,8 @@
 		3E26A1D8240E26F600524321 /* CustomerRatingsRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerRatingsRepresentation.swift; sourceTree = "<group>"; };
 		3E26A1D9240E26F600524321 /* CustomerRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerRepresentation.swift; sourceTree = "<group>"; };
 		3E43B28C240B11F90004A7BF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E62542B2410A0A2001E13F2 /* AddTruckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddTruckViewController.swift; path = "View Controllers/AddTruckViewController.swift"; sourceTree = SOURCE_ROOT; };
+		3E62542D2410A12A001E13F2 /* trucksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = trucksTableViewController.swift; path = "View Controllers/trucksTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 		ABEA90A72408946000535B74 /* FoodTruck TrackR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FoodTruck TrackR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABEA90AA2408946000535B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABEA90AC2408946000535B74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				ABEA90AE2408946000535B74 /* LoginViewController.swift */,
+				3E62542B2410A0A2001E13F2 /* AddTruckViewController.swift */,
+				3E62542D2410A12A001E13F2 /* trucksTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -256,12 +262,14 @@
 				3E26A1DA240E26F600524321 /* VendorRepresentation.swift in Sources */,
 				3E26A1DC240E26F600524321 /* CustomerRatingsRepresentation.swift in Sources */,
 				ABEA90AB2408946000535B74 /* AppDelegate.swift in Sources */,
+				3E62542E2410A12A001E13F2 /* trucksTableViewController.swift in Sources */,
 				3E26A1DB240E26F600524321 /* TruckRepresentation.swift in Sources */,
 				ABEA90AD2408946000535B74 /* SceneDelegate.swift in Sources */,
 				3E26A1CE240E26B900524321 /* Vendor+Convenience.swift in Sources */,
 				ABEA90CF240AEE6400535B74 /* CustomerRating+Convenience.swift in Sources */,
 				3E26A1CC240E261D00524321 /* CoreDataStack.swift in Sources */,
 				ABEA90BF2408A69500535B74 /* Customer+Convenience.swift in Sources */,
+				3E62542C2410A0A2001E13F2 /* AddTruckViewController.swift in Sources */,
 				ABEA90CB240AD79800535B74 /* FoodTruck TrackR.xcdatamodeld in Sources */,
 				ABEA90CD240AEE3F00535B74 /* MenuItem+Convenience.swift in Sources */,
 				ABEA90D1240AEE8600535B74 /* MenuPhoto+Convenience.swift in Sources */,

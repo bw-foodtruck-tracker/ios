@@ -115,7 +115,7 @@
         <!--FoodTruckTracker-->
         <scene sceneID="Bll-0d-hlw">
             <objects>
-                <tableViewController id="RXL-4Q-ea8" customClass="AnimalsTableViewController" customModule="FoodTruck_TrackR" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="RXL-4Q-ea8" customClass="trucksTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="te3-ey-c3U">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,10 +156,10 @@
             </objects>
             <point key="canvasLocation" x="567" y="916"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Truck View Controller-->
         <scene sceneID="dTu-sb-Dmg">
             <objects>
-                <viewController id="ZME-w5-781" sceneMemberID="viewController">
+                <viewController id="ZME-w5-781" customClass="AddTruckViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZEa-rX-Qtk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
