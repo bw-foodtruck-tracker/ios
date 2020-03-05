@@ -22,7 +22,7 @@ extension FoodVendor {
     
     convenience init(user: VendorRepresentation) {
         var trucks: [Truck] = []
-        for truck in user.ownedTrucks {
+        for truck in user.vendorTrucks {
             trucks.append(Truck(truck: truck))
         }
         

@@ -9,18 +9,21 @@
 import Foundation
 
 struct TruckRepresentation: Codable {
+    var location: LocationRepresentation
     var identifier: UUID
     var truckName: String
     var imageOfTruck: String
     var cuisineType: String?
     var customerRating: Double
     
-    init(imageOfTruck: String = "",
+    init(location: LocationRepresentation = LocationRepresentation(longitude: 0.0, latitude: 0.0),
+        imageOfTruck: String = "",
         customerRating: Double = 0.0,
         truckName: String = "",
         cuisineType: String? = nil,
         identifier: UUID = UUID()) {
         
+        self.location = location
         self.imageOfTruck = imageOfTruck
         self.customerRating = customerRating
         self.truckName = truckName
