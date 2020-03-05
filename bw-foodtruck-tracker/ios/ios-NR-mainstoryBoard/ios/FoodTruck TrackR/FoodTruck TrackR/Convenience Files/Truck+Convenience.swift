@@ -12,6 +12,7 @@ import CoreData
 extension Truck {
     @discardableResult convenience init(identifier: UUID = UUID(),
                                         customerRating: Double,
+                                        location: Location,
                                         truckName: String,
                                         imageOfTruck: String,
                                         cuisineType: String,
@@ -22,6 +23,29 @@ extension Truck {
         self.truckName = truckName
         self.cuisineType = cuisineType
         self.customerRating = customerRating
+        self.location = location
         self.imageOfTruck = imageOfTruck
+    }
+    
+    convenience init(truck: TruckRepresentation, context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
+        
+        self.init(truckName: truck.truckName,
+                  customerRating: truck.customerRating,
+                  location: Location(location: truck.location),
+                  imageOfTruck: truck.imageOfTruck,
+                  context: context)
+    }
+
+    var truckRepresentation: TruckRepresentation? {
+        guard let location = location,
+            let imageOfTruck = imageOfTruck,
+            let identifier = identifier,
+            let truckName = truckName else { return nil }
+        return TruckRepresentation(location: LocationRepresentation(longitude: location.longitude,
+                                                                    latitude: location.latitude),
+                                   imageOfTruck: imageOfTruck,
+                                   customerRating: customerRating,
+                                   truckName: truckName,
+                                   identifier: identifier)
     }
 }

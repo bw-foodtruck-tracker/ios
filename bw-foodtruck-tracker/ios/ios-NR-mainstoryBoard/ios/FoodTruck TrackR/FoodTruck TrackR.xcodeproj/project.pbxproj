@@ -30,6 +30,8 @@
 		ABEA90CF240AEE6400535B74 /* CustomerRating+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90CE240AEE6400535B74 /* CustomerRating+Convenience.swift */; };
 		ABEA90D1240AEE8600535B74 /* MenuPhoto+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90D0240AEE8600535B74 /* MenuPhoto+Convenience.swift */; };
 		ABEA90E6240F5DFB00535B74 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ABEA90E5240F5DFB00535B74 /* README.md */; };
+		ABEA90EA24107DCD00535B74 /* Location+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90E924107DCD00535B74 /* Location+Convenience.swift */; };
+		ABEA90EC24107EF000535B74 /* LocationRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90EB24107EF000535B74 /* LocationRepresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		ABEA90CE240AEE6400535B74 /* CustomerRating+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomerRating+Convenience.swift"; sourceTree = "<group>"; };
 		ABEA90D0240AEE8600535B74 /* MenuPhoto+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuPhoto+Convenience.swift"; sourceTree = "<group>"; };
 		ABEA90E5240F5DFB00535B74 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ABEA90E924107DCD00535B74 /* Location+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+Convenience.swift"; sourceTree = "<group>"; };
+		ABEA90EB24107EF000535B74 /* LocationRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepresentation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 				3E26A1D7240E26F600524321 /* TruckRepresentation.swift */,
 				3E26A1D8240E26F600524321 /* CustomerRatingsRepresentation.swift */,
 				3E26A1D9240E26F600524321 /* CustomerRepresentation.swift */,
+				ABEA90EB24107EF000535B74 /* LocationRepresentation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 				ABEA90CE240AEE6400535B74 /* CustomerRating+Convenience.swift */,
 				ABEA90D0240AEE8600535B74 /* MenuPhoto+Convenience.swift */,
 				3E26A1CD240E26B900524321 /* Vendor+Convenience.swift */,
+				ABEA90E924107DCD00535B74 /* Location+Convenience.swift */,
 			);
 			path = "Convenience Files";
 			sourceTree = "<group>";
@@ -264,12 +270,14 @@
 				3E26A1DA240E26F600524321 /* VendorRepresentation.swift in Sources */,
 				3E26A1DC240E26F600524321 /* CustomerRatingsRepresentation.swift in Sources */,
 				ABEA90AB2408946000535B74 /* AppDelegate.swift in Sources */,
+				ABEA90EA24107DCD00535B74 /* Location+Convenience.swift in Sources */,
 				3E26A1DB240E26F600524321 /* TruckRepresentation.swift in Sources */,
 				ABEA90AD2408946000535B74 /* SceneDelegate.swift in Sources */,
 				3E26A1CE240E26B900524321 /* Vendor+Convenience.swift in Sources */,
 				ABEA90CF240AEE6400535B74 /* CustomerRating+Convenience.swift in Sources */,
 				3E26A1CC240E261D00524321 /* CoreDataStack.swift in Sources */,
 				ABEA90BF2408A69500535B74 /* Customer+Convenience.swift in Sources */,
+				ABEA90EC24107EF000535B74 /* LocationRepresentation.swift in Sources */,
 				ABEA90CB240AD79800535B74 /* FoodTruck TrackR.xcdatamodeld in Sources */,
 				ABEA90CD240AEE3F00535B74 /* MenuItem+Convenience.swift in Sources */,
 				ABEA90D1240AEE8600535B74 /* MenuPhoto+Convenience.swift in Sources */,

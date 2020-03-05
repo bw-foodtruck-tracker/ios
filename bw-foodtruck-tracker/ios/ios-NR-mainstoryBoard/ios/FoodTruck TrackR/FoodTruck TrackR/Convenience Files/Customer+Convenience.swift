@@ -14,10 +14,10 @@ extension Customer {
                                         username: String,
                                         password: String,
                                         email: String,
-                                        favoriteTrucks: [Trucks],
+                                        favoriteTrucks: [Truck],
                                         context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
         self.init(context: context)
-        let favoriteFoodTrucks = NSOrderedSet(object: favoriteTrucks)
+        let favoriteFoodTrucks = NSSet(object: favoriteTrucks)
         self.identifier = identifier
         self.username = username
         self.password = password
