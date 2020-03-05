@@ -33,8 +33,8 @@
         <relationship name="menuItems" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MenuItem" inverseName="itemPhotos" inverseEntity="MenuItem"/>
     </entity>
     <entity name="Truck" representedClassName="Truck" syncable="YES" codeGenerationType="class">
-        <attribute name="cuisineType" optional="YES" attributeType="String"/>
         <attribute name="customerRating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="foodType" optional="YES" attributeType="String"/>
         <attribute name="identifier" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="imageOfTruck" optional="YES" attributeType="String"/>
         <attribute name="truckName" optional="YES" attributeType="String"/>
@@ -48,6 +48,6 @@
         <element name="MenuItem" positionX="-457.66015625" positionY="2.28515625" width="128" height="133"/>
         <element name="MenuPhoto" positionX="-678.515625" positionY="-153.4296875" width="128" height="73"/>
         <element name="Truck" positionX="-694.3125" positionY="-417.9453125" width="128" height="163"/>
-        <element name="Location" positionX="-243" positionY="-126" width="128" height="103"/>
+        <element name="Location" positionX="24.6171875" positionY="89.33984375" width="128" height="103"/>
     </elements>
 </model>

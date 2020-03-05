@@ -26,7 +26,7 @@ class TruckController {
     }
     
     func createTruck(with truckName: String, location: Location, imageOfTruck: String, identifier: UUID = UUID()) {
-        let truck = Truck(truckName: truckName, customerAvgRating: 0, location: Location(longitude: 0, latitude: 0), imageOfTruck: "")
+        let truck = Truck(customerRating: 0, location: Location(longitude: 0.0, latitude: 0.0), truckName: truckName, imageOfTruck: imageOfTruck, foodType: "")
         put(truck: truck)
         saveToPersistentStore()
     }
@@ -75,6 +75,29 @@ class TruckController {
         }
         
         completion(nil)
+        }.resume()
+    }
+    
+    func deleteTruckFromServer(truck: Truck, completion: @escaping ((Error?) -> Void) = { _ in }) {
+        
+        guard let identifier = truck.identifier else {
+            NSLog("Truck identifier is nil")
+            completion(NSError())
+            return
+        }
+        
+        let requestURL = baseURL.appendingPathComponent("Trucks").appendingPathComponent(identifier.uuidString).appendingPathExtension("json")
+        var request = URLRequest(url: requestURL)
+        request.httpMethod = "DELETE"
+        
+        URLSession.shared.dataTask(with: request) { _, _, error in
+            if let error = error {
+                NSLog("Error deleting truck from server: \(error)")
+                completion(error)
+                return
+            }
+            
+            completion(nil)
         }.resume()
     }
     func deleteTruckFromServer(truck: TruckRepresentation, completion: @escaping ((Error?) -> Void) = { _ in }) {
