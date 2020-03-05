@@ -50,14 +50,21 @@ class TruckController {
         var request = URLRequest(url: requestURL)
         request.httpMethod = "PUT"
         
-        guard let location = truck.location, let imageOfTruck = truck.imageOfTruck, let name = truck.truckName, let id = truck.identifier else { return }
+        guard let location = truck.location, let imageOfTruck = truck.imageOfTruck, let name = truck.truckName, let id = truck.identifier, let foodType = truck.foodType else { return }
         
-        let truckRep = TruckRepresentation(location: LocationRepresentation(longitude: location.longitude,
-        latitude: location.latitude),
-        imageOfTruck: imageOfTruck,
-        customerRating: truck.customerRating,
-        truckName: name,
-        identifier: id)
+//        let truckRep = TruckRepresentation(location: LocationRepresentation(longitude: location.longitude,
+//        latitude: location.latitude),
+//        imageOfTruck: imageOfTruck,
+//        customerRating: truck.customerRating,
+//        truckName: name,
+//        identifier: id)
+        
+        
+        let truckRep = TruckRepresentation(location: LocationRepresentation(longitude: location.longitude, latitude: location.latitude), imageOfTruck: imageOfTruck, customerRating: truck.customerRating, truckName: name, foodType: foodType, identifier: id)
+        
+            
+        
+        
         
         do {
             request.httpBody = try JSONEncoder().encode(truckRep)
@@ -226,4 +233,3 @@ class TruckController {
         }
     }
 }
-

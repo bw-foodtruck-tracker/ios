@@ -10,6 +10,7 @@ import Foundation
 import CoreData
 
 class CoreDataStack {
+     // MARK: - Properties
     static let shared = CoreDataStack()
     
     private init() {}

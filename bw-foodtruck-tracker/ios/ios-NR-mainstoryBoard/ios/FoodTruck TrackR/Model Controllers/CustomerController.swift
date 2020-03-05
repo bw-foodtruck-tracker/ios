@@ -28,7 +28,7 @@ enum NetworkError: Error {
 let baseURL = URL(string: "https://foodtruck-####.firebaseio.com/")! // Need correct URL
 
 class CustomerController {
-    
+    // MARK: - Methods
     var user: CustomerRepresentation?
     var token: String?
     

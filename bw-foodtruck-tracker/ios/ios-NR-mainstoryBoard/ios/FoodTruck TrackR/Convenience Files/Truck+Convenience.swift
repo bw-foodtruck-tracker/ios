@@ -29,23 +29,35 @@ extension Truck {
     
     convenience init(truck: TruckRepresentation, context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
         
-        self.init(truckName: truck.truckName,
+//        self.init(truckName: truck.truckName,
+//                  customerRating: truck.customerRating,
+//                  location: Location(location: truck.location),
+//                  imageOfTruck: truck.imageOfTruck,
+//                  context: context)
+        self.init(identifier: truck.identifier,
                   customerRating: truck.customerRating,
                   location: Location(location: truck.location),
+                  truckName: truck.truckName,
                   imageOfTruck: truck.imageOfTruck,
-                  context: context)
-    }
+                  foodType: truck.foodType,
+                  context:context)
+            }
 
     var truckRepresentation: TruckRepresentation? {
         guard let location = location,
             let imageOfTruck = imageOfTruck,
             let identifier = identifier,
-            let truckName = truckName else { return nil }
-        return TruckRepresentation(location: LocationRepresentation(longitude: location.longitude,
-                                                                    latitude: location.latitude),
-                                   imageOfTruck: imageOfTruck,
-                                   customerRating: customerRating,
-                                   truckName: truckName,
-                                   identifier: identifier)
+            let truckName = truckName,
+        let foodType = foodType
+            else { return nil }
+//        return TruckRepresentation(location: LocationRepresentation(longitude: location.longitude,
+//                                                                    latitude: location.latitude),
+//                                   imageOfTruck: imageOfTruck,
+//                                   customerRating: customerRating,
+//                                   truckName: truckName,
+//                                   identifier: identifier)
+        
+        
+        return TruckRepresentation(location: LocationRepresentation(longitude: location.longitude, latitude: location.latitude), imageOfTruck: imageOfTruck, customerRating: customerRating, truckName: truckName, foodType: foodType, identifier: identifier)
     }
 }
