@@ -17,7 +17,6 @@
 		3E26A1DC240E26F600524321 /* CustomerRatingsRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1D8240E26F600524321 /* CustomerRatingsRepresentation.swift */; };
 		3E26A1DD240E26F600524321 /* CustomerRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1D9240E26F600524321 /* CustomerRepresentation.swift */; };
 		3E43B28D240B11F90004A7BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E43B28C240B11F90004A7BF /* LaunchScreen.storyboard */; };
-		3E43B28F240B12350004A7BF /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E43B28E240B12350004A7BF /* signupViewController.swift */; };
 		ABEA90AB2408946000535B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90AA2408946000535B74 /* AppDelegate.swift */; };
 		ABEA90AD2408946000535B74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90AC2408946000535B74 /* SceneDelegate.swift */; };
 		ABEA90AF2408946000535B74 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90AE2408946000535B74 /* LoginViewController.swift */; };
@@ -42,7 +41,6 @@
 		3E26A1D8240E26F600524321 /* CustomerRatingsRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerRatingsRepresentation.swift; sourceTree = "<group>"; };
 		3E26A1D9240E26F600524321 /* CustomerRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerRepresentation.swift; sourceTree = "<group>"; };
 		3E43B28C240B11F90004A7BF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3E43B28E240B12350004A7BF /* signupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
 		ABEA90A72408946000535B74 /* FoodTruck TrackR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FoodTruck TrackR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABEA90AA2408946000535B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABEA90AC2408946000535B74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 		ABEA90C2240AD6E000535B74 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3E43B28E240B12350004A7BF /* signupViewController.swift */,
 				ABEA90AE2408946000535B74 /* LoginViewController.swift */,
 			);
 			path = "View Controllers";
@@ -256,7 +253,6 @@
 				ABEA90AF2408946000535B74 /* LoginViewController.swift in Sources */,
 				3E26A1D2240E26DC00524321 /* TruckController.swift in Sources */,
 				3E26A1D4240E26E100524321 /* VendorController.swift in Sources */,
-				3E43B28F240B12350004A7BF /* signupViewController.swift in Sources */,
 				3E26A1DA240E26F600524321 /* VendorRepresentation.swift in Sources */,
 				3E26A1DC240E26F600524321 /* CustomerRatingsRepresentation.swift in Sources */,
 				ABEA90AB2408946000535B74 /* AppDelegate.swift in Sources */,
