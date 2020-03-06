@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3E26A1CC240E261D00524321 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1CB240E261D00524321 /* CoreDataStack.swift */; };
-		3E26A1CE240E26B900524321 /* Vendor+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1CD240E26B900524321 /* Vendor+Convenience.swift */; };
+		3E26A1CE240E26B900524321 /* GrubFood+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1CD240E26B900524321 /* GrubFood+Convenience.swift */; };
 		3E26A1D0240E26CA00524321 /* CustomerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1CF240E26CA00524321 /* CustomerController.swift */; };
 		3E26A1D2240E26DC00524321 /* TruckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1D1240E26DC00524321 /* TruckController.swift */; };
-		3E26A1D4240E26E100524321 /* VendorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1D3240E26E100524321 /* VendorController.swift */; };
-		3E26A1DA240E26F600524321 /* VendorRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1D6240E26F600524321 /* VendorRepresentation.swift */; };
+		3E26A1D4240E26E100524321 /* GrubFoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1D3240E26E100524321 /* GrubFoodController.swift */; };
+		3E26A1DA240E26F600524321 /* GrubFoodRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1D6240E26F600524321 /* GrubFoodRepresentation.swift */; };
 		3E26A1DB240E26F600524321 /* TruckRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1D7240E26F600524321 /* TruckRepresentation.swift */; };
 		3E26A1DC240E26F600524321 /* CustomerRatingsRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1D8240E26F600524321 /* CustomerRatingsRepresentation.swift */; };
 		3E26A1DD240E26F600524321 /* CustomerRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1D9240E26F600524321 /* CustomerRepresentation.swift */; };
@@ -32,15 +32,16 @@
 		ABEA90E6240F5DFB00535B74 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ABEA90E5240F5DFB00535B74 /* README.md */; };
 		ABEA90EA24107DCD00535B74 /* Location+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90E924107DCD00535B74 /* Location+Convenience.swift */; };
 		ABEA90EC24107EF000535B74 /* LocationRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90EB24107EF000535B74 /* LocationRepresentation.swift */; };
+		ABEA90EF2411D39600535B74 /* FoodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90EE2411D39600535B74 /* FoodType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E26A1CB240E261D00524321 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		3E26A1CD240E26B900524321 /* Vendor+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Vendor+Convenience.swift"; sourceTree = "<group>"; };
+		3E26A1CD240E26B900524321 /* GrubFood+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GrubFood+Convenience.swift"; sourceTree = "<group>"; };
 		3E26A1CF240E26CA00524321 /* CustomerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerController.swift; sourceTree = "<group>"; };
 		3E26A1D1240E26DC00524321 /* TruckController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TruckController.swift; sourceTree = "<group>"; };
-		3E26A1D3240E26E100524321 /* VendorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorController.swift; sourceTree = "<group>"; };
-		3E26A1D6240E26F600524321 /* VendorRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorRepresentation.swift; sourceTree = "<group>"; };
+		3E26A1D3240E26E100524321 /* GrubFoodController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrubFoodController.swift; sourceTree = "<group>"; };
+		3E26A1D6240E26F600524321 /* GrubFoodRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrubFoodRepresentation.swift; sourceTree = "<group>"; };
 		3E26A1D7240E26F600524321 /* TruckRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TruckRepresentation.swift; sourceTree = "<group>"; };
 		3E26A1D8240E26F600524321 /* CustomerRatingsRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerRatingsRepresentation.swift; sourceTree = "<group>"; };
 		3E26A1D9240E26F600524321 /* CustomerRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerRepresentation.swift; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		ABEA90E5240F5DFB00535B74 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ABEA90E924107DCD00535B74 /* Location+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+Convenience.swift"; sourceTree = "<group>"; };
 		ABEA90EB24107EF000535B74 /* LocationRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepresentation.swift; sourceTree = "<group>"; };
+		ABEA90EE2411D39600535B74 /* FoodType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,7 @@
 		3E26A1D5240E26F600524321 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3E26A1D6240E26F600524321 /* VendorRepresentation.swift */,
+				3E26A1D6240E26F600524321 /* GrubFoodRepresentation.swift */,
 				3E26A1D7240E26F600524321 /* TruckRepresentation.swift */,
 				3E26A1D8240E26F600524321 /* CustomerRatingsRepresentation.swift */,
 				3E26A1D9240E26F600524321 /* CustomerRepresentation.swift */,
@@ -108,6 +110,7 @@
 		ABEA90A92408946000535B74 /* FoodTruck TrackR */ = {
 			isa = PBXGroup;
 			children = (
+				ABEA90ED2411D38100535B74 /* Helpers */,
 				ABEA90C7240AD73800535B74 /* Resources */,
 				ABEA90C6240AD72900535B74 /* CoreData */,
 				ABEA90C5240AD71500535B74 /* Convenience Files */,
@@ -133,7 +136,7 @@
 			children = (
 				3E26A1CF240E26CA00524321 /* CustomerController.swift */,
 				3E26A1D1240E26DC00524321 /* TruckController.swift */,
-				3E26A1D3240E26E100524321 /* VendorController.swift */,
+				3E26A1D3240E26E100524321 /* GrubFoodController.swift */,
 				3E26A1D5240E26F600524321 /* Models */,
 			);
 			path = "Model Controllers";
@@ -154,7 +157,7 @@
 				ABEA90CC240AEE3F00535B74 /* MenuItem+Convenience.swift */,
 				ABEA90CE240AEE6400535B74 /* CustomerRating+Convenience.swift */,
 				ABEA90D0240AEE8600535B74 /* MenuPhoto+Convenience.swift */,
-				3E26A1CD240E26B900524321 /* Vendor+Convenience.swift */,
+				3E26A1CD240E26B900524321 /* GrubFood+Convenience.swift */,
 				ABEA90E924107DCD00535B74 /* Location+Convenience.swift */,
 			);
 			path = "Convenience Files";
@@ -186,6 +189,14 @@
 				3E43B28C240B11F90004A7BF /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ABEA90ED2411D38100535B74 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ABEA90EE2411D39600535B74 /* FoodType.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,16 +276,17 @@
 				3E26A1D0240E26CA00524321 /* CustomerController.swift in Sources */,
 				ABEA90AF2408946000535B74 /* LoginViewController.swift in Sources */,
 				3E26A1D2240E26DC00524321 /* TruckController.swift in Sources */,
-				3E26A1D4240E26E100524321 /* VendorController.swift in Sources */,
+				3E26A1D4240E26E100524321 /* GrubFoodController.swift in Sources */,
 				3E43B28F240B12350004A7BF /* signupViewController.swift in Sources */,
-				3E26A1DA240E26F600524321 /* VendorRepresentation.swift in Sources */,
+				3E26A1DA240E26F600524321 /* GrubFoodRepresentation.swift in Sources */,
 				3E26A1DC240E26F600524321 /* CustomerRatingsRepresentation.swift in Sources */,
 				ABEA90AB2408946000535B74 /* AppDelegate.swift in Sources */,
 				ABEA90EA24107DCD00535B74 /* Location+Convenience.swift in Sources */,
 				3E26A1DB240E26F600524321 /* TruckRepresentation.swift in Sources */,
 				ABEA90AD2408946000535B74 /* SceneDelegate.swift in Sources */,
-				3E26A1CE240E26B900524321 /* Vendor+Convenience.swift in Sources */,
+				3E26A1CE240E26B900524321 /* GrubFood+Convenience.swift in Sources */,
 				ABEA90CF240AEE6400535B74 /* CustomerRating+Convenience.swift in Sources */,
+				ABEA90EF2411D39600535B74 /* FoodType.swift in Sources */,
 				3E26A1CC240E261D00524321 /* CoreDataStack.swift in Sources */,
 				ABEA90BF2408A69500535B74 /* Customer+Convenience.swift in Sources */,
 				ABEA90EC24107EF000535B74 /* LocationRepresentation.swift in Sources */,

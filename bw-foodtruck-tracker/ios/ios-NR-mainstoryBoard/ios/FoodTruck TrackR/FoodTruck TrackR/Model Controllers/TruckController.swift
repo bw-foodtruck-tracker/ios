@@ -26,7 +26,7 @@ class TruckController {
     }
     
     func createTruck(with truckName: String, location: Location, imageOfTruck: String, identifier: UUID = UUID()) {
-        let truck = Truck(customerRating: 0, location: Location(longitude: 0.0, latitude: 0.0), truckName: truckName, imageOfTruck: imageOfTruck, foodType: "")
+        let truck = Truck(customerRating: 0, location: Location(longitude: 0.0, latitude: 0.0), truckName: truckName, imageOfTruck: imageOfTruck)
         put(truck: truck)
         saveToPersistentStore()
     }

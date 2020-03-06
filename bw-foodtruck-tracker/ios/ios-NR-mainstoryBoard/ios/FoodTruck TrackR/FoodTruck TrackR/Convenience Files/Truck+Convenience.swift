@@ -15,13 +15,11 @@ extension Truck {
                                         location: Location,
                                         truckName: String,
                                         imageOfTruck: String,
-                                        foodType: String,
                                         context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
         self.init(context: context)
         
         self.identifier = identifier
         self.truckName = truckName
-        self.foodType = foodType
         self.customerRating = customerRating
         self.location = location
         self.imageOfTruck = imageOfTruck
