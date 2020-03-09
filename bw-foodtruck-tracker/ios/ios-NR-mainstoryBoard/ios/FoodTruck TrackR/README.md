@@ -54,3 +54,6 @@ STRETCH
 4. Implement at least one of your main views using SwiftUI. (iOS)
 5. Collaborate on a portion or all of a Web MVP with any Web teammate. For example: File structuring, Git, Styles, Semantic elements, etc. Learn something new and practice cross-collaborating. (UX)
 6. Write a blog post in medium about your visual design decisions for this project; share the link in your Google Doc. (UX)
+
+
+

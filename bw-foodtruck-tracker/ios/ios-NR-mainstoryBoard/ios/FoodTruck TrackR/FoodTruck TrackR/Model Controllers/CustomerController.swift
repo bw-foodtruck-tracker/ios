@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum HTTPMethod: String {
     case get = "GET"
@@ -23,11 +24,12 @@ enum NetworkError: Error {
     case decodeError
     case noAuth
     case invalidError
+    case goodResponse
 }
 
-let baseURL = URL(string: "https://foodtruck-####.firebaseio.com/")! // Need correct URL
-
 class CustomerController {
+    
+    let baseURL = URL(string: "https://foodtruck-tracker-lambda1.herokuapp.com/api/")!
     
     var user: CustomerRepresentation?
     var token: String?
@@ -38,26 +40,21 @@ class CustomerController {
     
     func register(user: CustomerSignup, completion: @escaping(NetworkError?) ->  Void) {
         let requestURL = baseURL
-            .appendingPathComponent("Customer")
-            .appendingPathComponent(user.username)
-            .appendingPathComponent("json")
+            .appendingPathComponent("auth/operator/register")
+
         var request = URLRequest(url: requestURL)
-        request.httpMethod = HTTPMethod.put.rawValue
+        request.httpMethod = HTTPMethod.post.rawValue
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
         let jsonEncoder = JSONEncoder()
         do {
-            let customerRepresent = CustomerRepresentation(username: user.username,
-                                                           password: user.password,
-                                                           email: user.email,
-                                                           favoriteTrucks: [],
-                                                           identifier: UUID())
-            request.httpBody = try jsonEncoder.encode(customerRepresent)
+            let customerSignUp = CustomerSignup(username: user.username, password: user.password, email: user.email)
+            request.httpBody = try jsonEncoder.encode(customerSignUp)
         } catch { print("Error encoding user: \(error)"); completion(.encodingError); return }
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let response = response as? HTTPURLResponse,
-                response.statusCode != 201 && response.statusCode != 200 {
+                response.statusCode != 200 && response.statusCode != 201 {
                 print(response.statusCode)
                 completion(.badResponse)
                 return
@@ -94,20 +91,14 @@ class CustomerController {
     
     func logIn(user: CustomerLogin, completion: @escaping(NetworkError?) -> Void) {
         
-        let requestURL = baseURL.appendingPathComponent("Consumer")
-            .appendingPathComponent(user.username)
-            .appendingPathExtension("json")
-        
-        
+        let requestURL = baseURL.appendingPathComponent("auth/login")
         var request = URLRequest(url: requestURL)
-        request.httpMethod = HTTPMethod.get.rawValue
+        request.httpMethod = HTTPMethod.post.rawValue
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-        
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let response = response as? HTTPURLResponse,
-                response.statusCode != 201 && response.statusCode != 200 {
+                response.statusCode != 200 && response.statusCode != 201 {
                 NSLog("Response status code is not 200 or 201. Status code: \(response.statusCode)")
                 completion(.badResponse)
                 return

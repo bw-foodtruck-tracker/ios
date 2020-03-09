@@ -1,5 +1,5 @@
 //
-//  Vendor+Convenience.swift
+//  GrubFood+Convenience.swift
 //  FoodTruck TrackR
 //
 //  Created by patelpra on 3/1/20.
@@ -10,13 +10,13 @@ import Foundation
 import CoreData
 
 extension GrubFood {
-    @discardableResult convenience init(username: String, password: String, email: String, truckOwner: [Truck], identifier: UUID = UUID(), context: NSManagedObjectContext =            CoreDataStack.shared.mainContext) {
+    @discardableResult convenience init(username: String, password: String, email: String, truckOwner: [Truck], identifier: UUID = UUID(), context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
         self.init(context: context)
         
         self.username = username
         self.password = password
         self.email = email
-        self.truckOwner = NSOrderedSet(object: truckOwner)
+        // self.truckOwner = NSOrderedSet(object: truckOwner)
         self.identifier = identifier
     }
     

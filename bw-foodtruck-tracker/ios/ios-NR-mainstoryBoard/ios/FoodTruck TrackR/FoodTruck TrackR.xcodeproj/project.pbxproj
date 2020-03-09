@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E0E11422415DFAA00B858A0 /* FoodTruckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0E11412415DFAA00B858A0 /* FoodTruckTableViewCell.swift */; };
 		3E26A1CC240E261D00524321 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1CB240E261D00524321 /* CoreDataStack.swift */; };
 		3E26A1CE240E26B900524321 /* GrubFood+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1CD240E26B900524321 /* GrubFood+Convenience.swift */; };
 		3E26A1D0240E26CA00524321 /* CustomerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1CF240E26CA00524321 /* CustomerController.swift */; };
@@ -33,9 +34,12 @@
 		ABEA90EA24107DCD00535B74 /* Location+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90E924107DCD00535B74 /* Location+Convenience.swift */; };
 		ABEA90EC24107EF000535B74 /* LocationRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90EB24107EF000535B74 /* LocationRepresentation.swift */; };
 		ABEA90EF2411D39600535B74 /* FoodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90EE2411D39600535B74 /* FoodType.swift */; };
+		ABEA910B2414507300535B74 /* TruckTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA910A2414507300535B74 /* TruckTableViewController.swift */; };
+		ABEA910D241450A200535B74 /* TruckDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA910C241450A200535B74 /* TruckDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E0E11412415DFAA00B858A0 /* FoodTruckTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTruckTableViewCell.swift; sourceTree = "<group>"; };
 		3E26A1CB240E261D00524321 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		3E26A1CD240E26B900524321 /* GrubFood+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GrubFood+Convenience.swift"; sourceTree = "<group>"; };
 		3E26A1CF240E26CA00524321 /* CustomerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerController.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 		ABEA90E924107DCD00535B74 /* Location+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+Convenience.swift"; sourceTree = "<group>"; };
 		ABEA90EB24107EF000535B74 /* LocationRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepresentation.swift; sourceTree = "<group>"; };
 		ABEA90EE2411D39600535B74 /* FoodType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodType.swift; sourceTree = "<group>"; };
+		ABEA910A2414507300535B74 /* TruckTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckTableViewController.swift; sourceTree = "<group>"; };
+		ABEA910C241450A200535B74 /* TruckDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,6 @@
 				ABEA90E5240F5DFB00535B74 /* README.md */,
 				ABEA90C8240AD75B00535B74 /* Storyboards */,
 				ABEA90A92408946000535B74 /* FoodTruck TrackR */,
-				ABEA90A82408946000535B74 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,12 +110,14 @@
 				ABEA90A72408946000535B74 /* FoodTruck TrackR.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		ABEA90A92408946000535B74 /* FoodTruck TrackR */ = {
 			isa = PBXGroup;
 			children = (
 				ABEA90ED2411D38100535B74 /* Helpers */,
+				ABEA90EE2411D39600535B74 /* FoodType.swift */,
 				ABEA90C7240AD73800535B74 /* Resources */,
 				ABEA90C6240AD72900535B74 /* CoreData */,
 				ABEA90C5240AD71500535B74 /* Convenience Files */,
@@ -118,6 +125,7 @@
 				ABEA90C3240AD6EA00535B74 /* Model Controllers */,
 				ABEA90C2240AD6E000535B74 /* View Controllers */,
 				ABEA90B82408946D00535B74 /* Info.plist */,
+				ABEA90A82408946000535B74 /* Products */,
 			);
 			path = "FoodTruck TrackR";
 			sourceTree = "<group>";
@@ -127,6 +135,8 @@
 			children = (
 				3E43B28E240B12350004A7BF /* signupViewController.swift */,
 				ABEA90AE2408946000535B74 /* LoginViewController.swift */,
+				ABEA910A2414507300535B74 /* TruckTableViewController.swift */,
+				ABEA910C241450A200535B74 /* TruckDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -145,6 +155,7 @@
 		ABEA90C4240AD70200535B74 /* View Cells */ = {
 			isa = PBXGroup;
 			children = (
+				3E0E11412415DFAA00B858A0 /* FoodTruckTableViewCell.swift */,
 			);
 			path = "View Cells";
 			sourceTree = "<group>";
@@ -194,7 +205,6 @@
 		ABEA90ED2411D38100535B74 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				ABEA90EE2411D39600535B74 /* FoodType.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -276,6 +286,7 @@
 				3E26A1D0240E26CA00524321 /* CustomerController.swift in Sources */,
 				ABEA90AF2408946000535B74 /* LoginViewController.swift in Sources */,
 				3E26A1D2240E26DC00524321 /* TruckController.swift in Sources */,
+				ABEA910D241450A200535B74 /* TruckDetailViewController.swift in Sources */,
 				3E26A1D4240E26E100524321 /* GrubFoodController.swift in Sources */,
 				3E43B28F240B12350004A7BF /* signupViewController.swift in Sources */,
 				3E26A1DA240E26F600524321 /* GrubFoodRepresentation.swift in Sources */,
@@ -284,11 +295,13 @@
 				ABEA90EA24107DCD00535B74 /* Location+Convenience.swift in Sources */,
 				3E26A1DB240E26F600524321 /* TruckRepresentation.swift in Sources */,
 				ABEA90AD2408946000535B74 /* SceneDelegate.swift in Sources */,
+				ABEA910B2414507300535B74 /* TruckTableViewController.swift in Sources */,
 				3E26A1CE240E26B900524321 /* GrubFood+Convenience.swift in Sources */,
 				ABEA90CF240AEE6400535B74 /* CustomerRating+Convenience.swift in Sources */,
 				ABEA90EF2411D39600535B74 /* FoodType.swift in Sources */,
 				3E26A1CC240E261D00524321 /* CoreDataStack.swift in Sources */,
 				ABEA90BF2408A69500535B74 /* Customer+Convenience.swift in Sources */,
+				3E0E11422415DFAA00B858A0 /* FoodTruckTableViewCell.swift in Sources */,
 				ABEA90EC24107EF000535B74 /* LocationRepresentation.swift in Sources */,
 				ABEA90CB240AD79800535B74 /* FoodTruck TrackR.xcdatamodeld in Sources */,
 				ABEA90CD240AEE3F00535B74 /* MenuItem+Convenience.swift in Sources */,

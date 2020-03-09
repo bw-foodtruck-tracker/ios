@@ -20,6 +20,5 @@ extension MenuItem {
         
         self.itemName = itemName
         self.itemDescription = itemDescription
-        self.itemPhotos = NSOrderedSet(object: itemPhotos)
     }
 }

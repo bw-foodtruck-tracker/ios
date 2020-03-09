@@ -9,14 +9,14 @@
 import Foundation
 
 struct CustomerLogin: Codable {
-    var username: String
-    var password: String
+    var username: String?
+    var password: String?
 }
 
 struct CustomerSignup: Codable {
-    var username: String
-    var password: String
-    var email: String
+    var username: String?
+    var password: String?
+    var email: String?
 }
 
 class CustomerRepresentation: Codable, Equatable {
@@ -56,7 +56,7 @@ class CustomerRepresentation: Codable, Equatable {
             self.favoriteTrucks = trucks
             self.identifier = id
         }
-        
+
         static func == (lhs: CustomerRepresentation, rhs: CustomerRepresentation) -> Bool {
             return lhs.username == rhs.username &&
                 lhs.password == rhs.password &&

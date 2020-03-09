@@ -6,6 +6,7 @@
 //  Copyright © 2020 Crus Technologies. All rights reserved.
 //
 
+
 import Foundation
 
 struct TruckRepresentation: Codable {

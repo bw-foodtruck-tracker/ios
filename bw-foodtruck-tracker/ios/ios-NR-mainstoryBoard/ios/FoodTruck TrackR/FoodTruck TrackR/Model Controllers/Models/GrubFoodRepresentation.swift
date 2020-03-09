@@ -1,5 +1,5 @@
 //
-//  VendorRepresentation.swift
+//  GrubFoodRepresentation.swift
 //  FoodTruck TrackR
 //
 //  Created by patelpra on 3/2/20.
@@ -7,6 +7,17 @@
 //
 
 import Foundation
+
+struct GrubFoodLogin: Codable {
+    var username: String
+    var password: String
+}
+
+struct GrubFoodSignup: Codable {
+    var username: String
+    var password: String
+    var email: String
+}
 
 class GrubFoodRepresentation: Codable, Equatable {
     

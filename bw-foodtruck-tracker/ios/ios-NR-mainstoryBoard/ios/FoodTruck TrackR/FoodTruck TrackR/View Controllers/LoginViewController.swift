@@ -8,14 +8,24 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+enum UserType: String {
+    case customer
+    case grubfood
+}
+
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var loginSegmentedControl: UISegmentedControl!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
-    static var isVendor: Bool = false
+    static var isGrubFood: Bool = false
+    
+    var userType: UserType?
+    
+    var customerController: CustomerController?
+    var grubFoodController: GrubFoodController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +38,8 @@ class LoginViewController: UIViewController {
     }
     
     private func setupViews() {
-        LoginViewController.isVendor = false
-        // userType = .customer
+        LoginViewController.isGrubFood = false
+        userType = .customer
         
         passwordTextField.isSecureTextEntry = true
     
@@ -38,18 +48,46 @@ class LoginViewController: UIViewController {
     @IBAction func loginTapped(_ sender: UIButton) {
         guard let username = usernameTextField.text, !username.isEmpty,
             let password = passwordTextField.text, !password.isEmpty else { return }
-        // userType
+        guard let userType = userType else { return }
         
+        switch userType {
+        case .grubfood:
+            grubFoodController?.logIn(user: GrubFoodLogin(username: username, password: password)) { error in
+                if let error: NetworkError = error {
+                    NSLog("Error returned when trying to log in: \(error)")
+                    DispatchQueue.main.async {
+                    }
+                    return
+                } else {
+                    DispatchQueue.main.async {
+                        self.dismiss(animated: true, completion: nil)
+                    }
+                }
+            }
+        case .customer:
+            customerController?.logIn(user: CustomerLogin(username: username, password: password)) { error in
+                if let error: NetworkError = error {
+                    NSLog("Error returned when trying to login: \(error)")
+                    DispatchQueue.main.async {
+                    }
+                    return
+                } else {
+                    DispatchQueue.main.async {
+                        self.dismiss(animated: true, completion: nil)
+                    }
+                }
+            }
+        }
     }
     
     @IBAction func segControlAction(_ sender: UISegmentedControl) {
         switch loginSegmentedControl.selectedSegmentIndex {
         case 0:
-            LoginViewController.isVendor = false
-            usernameTextField = nil // Need to change to userType = .customer
+            LoginViewController.isGrubFood = false
+            userType = .customer
         case 1:
-            LoginViewController.isVendor = true
-            usernameTextField = nil // Need to change to userType = .diner
+            LoginViewController.isGrubFood = true
+            userType = .grubfood
         default:
             break
         }

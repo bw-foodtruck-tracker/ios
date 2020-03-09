@@ -8,8 +8,11 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 class TruckController {
+    
+    let baseURL = URL(string: "https://foodtruck-tracker-lambda1.herokuapp.com/api/")!
     
     var trucks: [TruckRepresentation] = []
     
@@ -46,7 +49,7 @@ class TruckController {
     private func put(truck: Truck, completion: @escaping ((Error?) -> Void) = {_ in }) {
     
         let identifier = truck.identifier?.uuidString ?? UUID().uuidString
-        let requestURL = baseURL.appendingPathComponent("Trucks").appendingPathComponent(identifier).appendingPathExtension("json")
+        let requestURL = baseURL.appendingPathComponent("operator/truck/1/truckLocation").appendingPathComponent(identifier).appendingPathExtension("json")
         var request = URLRequest(url: requestURL)
         request.httpMethod = "PUT"
         
@@ -86,7 +89,7 @@ class TruckController {
             return
         }
         
-        let requestURL = baseURL.appendingPathComponent("Trucks").appendingPathComponent(identifier.uuidString).appendingPathExtension("json")
+        let requestURL = baseURL.appendingPathComponent("operator/truck/1/truckLocation").appendingPathComponent(identifier.uuidString).appendingPathExtension("json")
         var request = URLRequest(url: requestURL)
         request.httpMethod = "DELETE"
         
@@ -102,7 +105,7 @@ class TruckController {
     }
     func deleteTruckFromServer(truck: TruckRepresentation, completion: @escaping ((Error?) -> Void) = { _ in }) {
         
-        let requestURL = baseURL.appendingPathComponent("Trucks").appendingPathComponent(truck.identifier.uuidString).appendingPathExtension("json")
+        let requestURL = baseURL.appendingPathComponent("operator/truck/1/truckLocation").appendingPathComponent(truck.identifier.uuidString).appendingPathExtension("json")
         var request = URLRequest(url: requestURL)
         request.httpMethod = "DELETE"
         
@@ -119,7 +122,7 @@ class TruckController {
     
     func fetchTrucksFromServer(completion: @escaping ((Error?) -> Void) = { _ in }) {
         
-        let requestURL = baseURL.appendingPathComponent("Trucks").appendingPathExtension("json")
+        let requestURL = baseURL.appendingPathComponent("operator/truck/1/truckLocation").appendingPathExtension("json")
         
         URLSession.shared.dataTask(with: requestURL) { data, _, error in
             
